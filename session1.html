@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Platform Faucet</title>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="text/javascript"></script>
+    <script src="session1.js"></script>
+    
+</head>
+<body>
+    <h1>Request ETH</h1>
+
+    <p>Connected Wallet Address: <span id="walletAddress"></span></p>
+
+    <label for="recipientAddress">Enter Recipient Address:</label>
+    <input type="text" id="recipientAddress" name="recipientAddress" style="width:400px"><br><br>
+
+    <label for="ethAmount">Enter ETH Amount:</label>
+    <input type="text" id="ethAmount" name="ethAmount" style="width:400px"><br><br>
+
+    <button onclick="sendETH()">Send ETH</button>
+
+    <br />
+    <br />
+    
+    <label for="ethAmount">Enter Signature:</label>
+    <input type="text" id="ethSig" name="ethSig" style="width:400px"><br><br>
+
+    <button onclick="sendETHWithSignature()">Send ETH with Signature</button>
+    
+
+    <script>
+        connectWallet();
+    </script>
+</body>
+</html>

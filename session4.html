@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Platform Faucet</title>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="text/javascript"></script>
+    <script src="session1.js"></script>
+    <script src="session4.js"></script>
+    
+</head>
+<body>
+    <h1>Request ETH</h1>
+
+    <p>Connected Wallet Address: <span id="walletAddress"></span></p>
+    <button onclick="checkBalance()">Check Balance</button>
+    <button onclick="makeDonation()">Donate</button>
+    <script>
+        connectWallet();
+    </script>
+</body>
+</html>
